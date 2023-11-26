@@ -95,7 +95,7 @@ if submit_button:
 
         # Query the API
         output = query({"inputs": text, })
-
+        print(output)
        # Display the results
         summary = output[0]['summary_text'].replace('<n>', " ") 
 
