@@ -16,24 +16,6 @@ with c2:
 
 st.markdown("**Generate summaries of articles and blog posts using abstractive summarization with Google's Pegasus language model.**")
 
-
-# Sidebar content
-st.sidebar.subheader("About the app")
-st.sidebar.info("This app uses 🤗HuggingFace's [google/pegasus-cnn_dailymail](https://huggingface.co/google/pegasus-cnn_dailymail) model.\
-                 \nYou can find the source code [here](https://github.com/ivnlee/streamlit-text-summarizer)")
-st.sidebar.write("\n\n")
-st.sidebar.markdown("**Get a free API key from HuggingFace:**")
-st.sidebar.markdown("* Create a [free account](https://huggingface.co/join) or [login](https://huggingface.co/login)")
-st.sidebar.markdown("* Go to **Settings** and then **Access Tokens**")
-st.sidebar.markdown("* Create a new Token (select 'read' role)")
-st.sidebar.markdown("* Paste your API key in the text box")
-st.sidebar.divider()
-st.sidebar.write("Please make sure your article is in English and is not behind a paywall.")
-st.sidebar.write("\n\n")
-st.sidebar.divider()
-st.sidebar.caption("Created by [Ivan Lee](https://ivan-lee.medium.com/) using [Streamlit](https://streamlit.io/)🎈.")
-
-
 # Inputs 
 st.subheader("Enter the URL of the article you want to summarize")
 default_url = "https://"
